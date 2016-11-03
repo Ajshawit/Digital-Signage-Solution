@@ -1,0 +1,1 @@
+$("#slideshow > div:gt(0)").hide(),setInterval(function(){$("#slideshow > div:first").fadeOut(2e3).next().fadeIn(2e3).end().appendTo("#slideshow")},1e4);
