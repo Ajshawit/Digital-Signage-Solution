@@ -1,0 +1,23 @@
+#slideshow img {
+  width: 1280px;
+  height: 720px; }
+
+#slideshow > div {
+  position: absolute; }
+
+body {
+  background-color: #072129; }
+
+.date {
+  padding: 10px;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  background-color: #104c5e;
+  border-radius: 10px; }
+  .date #day {
+    font-size: 60px;
+    font-weight: 900;
+    color: white; }
+  .date #month {
+    font-size: 30px;
+    color: white; }
