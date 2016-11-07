@@ -1,1 +1,1 @@
-$("#slideshow > div:gt(0)").hide(),setInterval(function(){$("#slideshow > div:first").fadeOut(2e3).next().fadeIn(2e3).end().appendTo("#slideshow")},1e4);
+function Slider(){$("#imageSlide").fadeOut("slow",function(){$(this).attr("src",slideshowImageURLs[slideshowImageURLs.length++%slideshowImageCount]).fadeIn("slow")})}var slideshowImageURLs=["img/mustang.jpg","img/gt86.jpg"],slideshowImageCount=slideshowImageURLs.length;$(function(){$("#imageSlide").attr("src",$(slideshowImageURLs).get(-1))}),$(function(){setInterval(Slider,2e4)});
