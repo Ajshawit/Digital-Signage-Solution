@@ -6,75 +6,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Digital Signage Board</title>
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,900" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
 </head>
 
 <body>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-2">
-          <div class="date">
-            <p>
-              <span id="day">10</span></br>
-              <span id="month">November</span>
-            </p>
-          </div>
-        </div>
-        <div class="col-md-10">
-            <div id="slideshow">
-                <div>
-                    <img src="https://s3-ap-southeast-2.amazonaws.com/ajshawitbucket/RiseVison/The+most+dangerous+kind+of+waste+-+Shigeo+Shingo.jpg">
-                    <!-- The most dangerous kind of waste -->
+    <div class="container">
+        <div class="row">
+            <div class="column-9">
+                <div id="slideshow">
+                    <img id="imageSlide" src="">
                 </div>
-                <div>
-                    <img src="https://s3-ap-southeast-2.amazonaws.com/ajshawitbucket/RiseVison/You+add+value+to+people+when+you+value+them+-+John+Maxwell.jpg">
-                    <!-- You add value to people when you value them -->
-                </div>
-                <div>
-                    <img src="https://s3-ap-southeast-2.amazonaws.com/ajshawitbucket/RiseVison/underpromise+overdeliver.PNG">
-                    <!-- Under promise and Over deliver -->
-                </div>
-                <div>
-                    <img src="https://s3-ap-southeast-2.amazonaws.com/ajshawitbucket/RiseVison/4+purposes+of+improvment.PNG">
-                    <!-- 4 Purposes of improvement -->
-                </div>
-                <div>
-                    <img src="https://s3-ap-southeast-2.amazonaws.com/ajshawitbucket/RiseVison/4TQ+Value.jpg">
-                    <!-- 4TQ Value -->
-                </div>
-                <div>
-                    <img src="https://s3-ap-southeast-2.amazonaws.com/ajshawitbucket/RiseVison/Listen+with+the+intent+to+understand.jpg">
-                    <!-- Listen with the intent to understand -->
+            </div>
+            <div class="column-3">
+                <div class="date">
+                    <p>
+                        <span id="day">10</span></br>
+                        <span id="month">November</span>
+                    </p>
                 </div>
             </div>
         </div>
     </div>
-    </div>
     <script>
-      var d = new Date();
-      var monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-      var dayNames = ["0", "1st", "2nd", "3rd", "4th", "5th", "6th", "7th", "8th", "9th", "10th", "12th", "13th", "14th", "15th", "16th", "17th", "18th", "19th", "20th", "21st", "22nd", "23rd", "24th", "25th", "26th", "27th", "28th", "29th", "30th", "31st"]
+        var d = new Date();
+        var monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+        var dayNames = ["0", "1st", "2nd", "3rd", "4th", "5th", "6th", "7th", "8th", "9th", "10th", "12th", "13th", "14th", "15th", "16th", "17th", "18th", "19th", "20th", "21st", "22nd", "23rd", "24th", "25th", "26th", "27th", "28th", "29th",
+            "30th", "31st"
+        ]
 
-      document.getElementById('day').innerHTML = dayNames[d.getDate()];
-      document.getElementById('month').innerHTML = monthNames[d.getMonth()];
-
+        document.getElementById('day').innerHTML = dayNames[d.getDate()];
+        document.getElementById('month').innerHTML = monthNames[d.getMonth()];
     </script>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script src="js/main-min.js"></script>
-
 </body>
 
 </html>
