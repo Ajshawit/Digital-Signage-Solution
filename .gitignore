@@ -79,4 +79,6 @@ node_modules
 
 *.scssc
 
+*.sassc
+
 config.rb
