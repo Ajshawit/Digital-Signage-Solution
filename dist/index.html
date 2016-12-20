@@ -24,6 +24,30 @@
                         <span id="day">10</span></br>
                         <span id="month">November</span>
                     </p>
+                    <h1>Today</h1>
+                    <p><strong>Date:</strong> <span class="date0"></span></p>
+                    <p><strong>Weather:</strong> <span class="weather0">Clear</span></p>
+                    <p><strong>Temp:</strong> <span class="temp0">20</span></p>
+
+                    <h1>Tomorrow</h1>
+                    <p><strong>Date:</strong> <span class="date1"></span></p>
+                    <p><strong>Weather:</strong> <span class="weather1">Clear</span></p>
+                    <p><strong>Temp:</strong> <span class="temp1">20</span></p>
+
+                    <h1>Thurday</h1>
+                    <p><strong>Date:</strong> <span class="date2"></span></p>
+                    <p><strong>Weather:</strong> <span class="weather2">Clear</span></p>
+                    <p><strong>Temp:</strong> <span class="temp2">20</span></p>
+
+                    <h1>Friday</h1>
+                    <p><strong>Date:</strong> <span class="date3"></span></p>
+                    <p><strong>Weather:</strong> <span class="weather3">Clear</span></p>
+                    <p><strong>Temp:</strong> <span class="temp3">20</span></p>
+
+                    <h1>Saturday</h1>
+                    <p><strong>Date:</strong> <span class="date4"></span></p>
+                    <p><strong>Weather:</strong> <span class="weather4">Clear</span></p>
+                    <p><strong>Temp:</strong> <span class="temp4">20</span></p>
                 </div>
             </div>
         </div>
@@ -32,18 +56,12 @@
         var d = new Date();
         var monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
         var dayNames = ["0", "1st", "2nd", "3rd", "4th", "5th", "6th", "7th", "8th", "9th", "10th", "12th", "13th", "14th", "15th", "16th", "17th", "18th", "19th", "20th", "21st", "22nd", "23rd", "24th", "25th", "26th", "27th", "28th", "29th",
-            "30th", "31st"
-        ]
+            "30th", "31st" ]
 
         document.getElementById('day').innerHTML = dayNames[d.getDate()];
         document.getElementById('month').innerHTML = monthNames[d.getMonth()];
     </script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="js/main.min.js"></script>
-    <script id="__bs_script__">//<![CDATA[
-    document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.17.5'><\/script>".replace("HOST", location.hostname));
-    //]]>
-    </script>
-</body>
-
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="http://momentjs.com/downloads/moment.min.js" type="text/javascript"></script>
+    <script src="js/main.min.js"></script
 </html>
