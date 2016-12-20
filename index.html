@@ -1,0 +1,24 @@
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<script>
+var d = new Date();
+var day = d.getDate();
+var month = d.getMonth() + 1;
+var year = d.getFullYear();
+var fullDate = year + "-" + month + "-" + day
+
+$.getJSON('http://api.openweathermap.org/data/2.5/forecast?id=6619279&appid=cb00cfb85549a09b384addf89d365ed6&mode=json', function(json) {
+  $('p.city').text(json.city.name);
+  $.each(json.list), function(i, item) {
+    if ((json.list.dt_text) == fullDate + "12:00:00") {
+      $('p.dt_text').text(json.list.dt_text)
+      $('p.temp').text(json.list.temp)
+      $('p.weather').text(json.list.weather.main)
+    }
+  }
+});
+</script>
+
+<p class="city">City</p>
+<p class="dt_text">Date</p>
+<p class="weather">Sunny</p>
+<p class="temp">20</p>
