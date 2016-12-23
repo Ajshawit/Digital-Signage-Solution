@@ -56,8 +56,8 @@ body {
 
 .date {
   margin-top: 10px;
-  margin-bottom: 10px;
-  padding: 20px;
+  margin-bottom: 5px;
+  padding: 15px;
   font-family: "Roboto", sans-serif;
   text-align: center;
   background-color: #104c5e;
@@ -74,11 +74,34 @@ body {
     font-size: 30px;
     color: white; }
 
+.weather {
+  padding: 10px;
+  text-align: center; }
+  .weather h1 {
+    font-size: 20px;
+    margin-top: 8px;
+    margin-bottom: 3px;
+    color: white;
+    font-family: "Roboto", sans-serif; }
+  .weather p {
+    margin-bottom: 12px;
+    margin-top: 10px;
+    font-size: 19px;
+    color: white;
+    font-family: "Roboto", sans-serif; }
+  .weather .wi {
+    color: white;
+    font-size: 56px;
+    padding: 6px; }
+  .weather .day {
+    padding: 2.5px; }
+
 #quoteOfTheDay {
   color: white;
   font-family: "Roboto", sans-serif; }
   #quoteOfTheDay p {
-    margin: 0px; }
+    margin: 0px;
+    font-size: 16px; }
   #quoteOfTheDay #quote {
     font-size: 24px;
     text-align: left;
